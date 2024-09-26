@@ -44,7 +44,7 @@ class _PlayerAppState extends State {
         floatingActionButton:Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const SizedBox(width: 30,height: 300),
+            const SizedBox(width: 30,height: 200),
             FloatingActionButton(
               onPressed: () {
                 if (counter > 0) {
