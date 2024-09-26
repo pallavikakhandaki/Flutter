@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget{
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    height: 500,
+                    height: 450,
                     width: 5,
                     color: Colors.black,
                   ),
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget{
               Column(
                 children: [
                   const SizedBox(
-                    height: 145,
+                    height: 170,
                   ),
                   Container(
                     height:35,
