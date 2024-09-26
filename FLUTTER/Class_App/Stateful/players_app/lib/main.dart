@@ -41,17 +41,36 @@ class _PlayerAppState extends State {
             child: Image.network(playersList[counter]),
           ),
         ),
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {
-            if(counter<playersList.length - 1) {
-              counter++;
-            } else{
-              counter = 0;
-            }
-            setState(() {});
-          },
-          backgroundColor: Colors.blue,
-          child: const Text("Next"),
+        floatingActionButton:Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            const SizedBox(width: 30,height: 300),
+            FloatingActionButton(
+              onPressed: () {
+                if (counter > 0) {
+                  counter--;
+                } else {
+                  counter = playersList.length - 1;
+                }
+                setState(() {});
+              },
+              backgroundColor: Colors.lightBlue,
+              child: const Icon(Icons.arrow_back),
+            ),
+            const SizedBox(width: 40),
+            FloatingActionButton(
+              onPressed: () {
+                if (counter < playersList.length - 1) {
+                  counter++;
+                } else {
+                  counter = 0;
+                }
+                setState(() {});
+              },
+              backgroundColor: Colors.lightBlue,
+              child: const Icon(Icons.arrow_forward),
+            ),
+          ],
         ),
       ),
     );
