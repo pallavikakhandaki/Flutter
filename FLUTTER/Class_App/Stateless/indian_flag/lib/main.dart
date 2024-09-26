@@ -1,7 +1,6 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() {
   runApp(const MyApp());
@@ -23,12 +22,12 @@ class MyApp extends StatelessWidget{
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
+              Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width:5,
-                    height:450,
+                    height: 500,
+                    width: 5,
                     color: Colors.black,
                   ),
                 ],
@@ -36,7 +35,7 @@ class MyApp extends StatelessWidget{
               Column(
                 children: [
                   const SizedBox(
-                    height: 170,
+                    height: 145,
                   ),
                   Container(
                     height:35,
@@ -56,6 +55,7 @@ class MyApp extends StatelessWidget{
                   ),
                 ],
               ),
+              
             ],
           ),
         ),
