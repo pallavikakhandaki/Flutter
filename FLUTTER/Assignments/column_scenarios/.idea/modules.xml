@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/column_scenarios.iml" filepath="$PROJECT_DIR$/column_scenarios.iml" />
+      <module fileurl="file://$PROJECT_DIR$/android/column_scenarios_android.iml" filepath="$PROJECT_DIR$/android/column_scenarios_android.iml" />
+    </modules>
+  </component>
+</project>
