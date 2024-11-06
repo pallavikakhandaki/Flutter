@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:shoes_ui/cart.dart';
+import 'package:shoes_ui/recomended.dart';
 
 void main(){
   runApp(const Shoes());
@@ -14,7 +15,7 @@ class Shoes extends StatelessWidget{
   Widget build(BuildContext context){
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Cart(),
+      home: Recomended(),
     );
   }
 }
